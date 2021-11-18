@@ -14,6 +14,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup2"
             android:layout_width="408dp"
             android:layout_height="43dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -21,36 +22,56 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip"
+                android:id="@+id/chipScan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:style="@style/Chip.Blue"
                 android:text="@string/scan_chip"
-                android:theme="@style/Chip.Blue"
                 app:chipIcon="@drawable/ic_center_focus_weak_chip" />
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip2"
+                android:id="@+id/chipTopUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:style="@style/Chip.Blue"
                 android:text="@string/top_up_chip"
-                android:theme="@style/Chip.Blue"
                 app:chipIcon="@drawable/ic_add_circle_outline_chip" />
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip3"
+                android:id="@+id/chipSend"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:style="@style/Chip.Blue"
                 android:text="@string/send_chip"
-                android:theme="@style/Chip.Blue"
                 app:chipIcon="@drawable/ic_open_in_new_chip" />
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip4"
+                android:id="@+id/chipRequest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:style="@style/Chip.Blue"
                 android:text="@string/request_chip"
-                android:theme="@style/Chip.Blue"
                 app:chipIcon="@drawable/ic_open_in_new_rotated_chip" />
         </com.google.android.material.chip.ChipGroup>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="36dp"
+            android:style="@style/CardView.White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" >
+
+            <TextView
+                android:id="@+id/textViewPulsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/bonus_pulsa_50"
+                android:style="@style/CardView.TextView"
+                android:text="@string/pulsa_amp_data" />
+
+
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

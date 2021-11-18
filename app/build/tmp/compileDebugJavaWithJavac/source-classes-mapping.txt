@@ -1,0 +1,6 @@
+com/ualr/layoutassignment/MainActivity.java
+ com.ualr.layoutassignment.MainActivity
+com/ualr/layoutassignment/databinding/ActivityMainBinding.java
+ com.ualr.layoutassignment.databinding.ActivityMainBinding
+com/ualr/layoutassignment/BuildConfig.java
+ com.ualr.layoutassignment.BuildConfig
