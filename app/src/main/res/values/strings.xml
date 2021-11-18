@@ -3,6 +3,7 @@
     <string name="scan_chip">Scan</string>
     <string name="top_up_chip">Top Up</string>
     <string name="send_chip">Send</string>
+    <string name="request_chip">Request</string>
     <string name="pulsa_amp_data"><![CDATA[Pulsa & Data]]></string>
     <string name="bonus_pulsa_50">Bonus pulsa 50%</string>
     <string name="buy_now">BUY NOW</string>
