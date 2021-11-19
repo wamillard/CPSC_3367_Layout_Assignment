@@ -35,7 +35,13 @@ public class MainActivity extends AppCompatActivity {
         return;
     }
 
-    public void recalculate()
+    public void calculateSubtotals()
+    {
+
+        return;
+    }
+
+    public void calculateTotal()
     {
 
         return;
