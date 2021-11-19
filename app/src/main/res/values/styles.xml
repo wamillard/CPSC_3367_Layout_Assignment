@@ -7,9 +7,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Button.Blue.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+    <style name="Button.Blue.Borderless" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textColor">@android:color/white</item>
         <item name="colorButtonNormal">@color/blue_400</item>
+    </style>
+
+
+    <style name="Button.White.Borderless" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grey_500</item>
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12dp</item>
+        <item name="iconSize">@dimen/spacing_xxlarge</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textTop</item>
+        <item name="textAllCaps">false</item>
+        <item name="strokeColor">@android:color/white</item>
     </style>
 
     <style name="Chip.Blue" parent="@style/Widget.MaterialComponents.Chip.Action">
