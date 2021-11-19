@@ -32,7 +32,13 @@ public final class ActivityMainBinding implements ViewBinding {
   public final MaterialButton btnCashout;
 
   @NonNull
+  public final MaterialButton btnDiscount;
+
+  @NonNull
   public final MaterialButton btnElec;
+
+  @NonNull
+  public final MaterialButton btnFull;
 
   @NonNull
   public final MaterialButton btnGames;
@@ -71,7 +77,8 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView textViewPulsa;
 
   private ActivityMainBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnBuyNow,
-      @NonNull MaterialButton btnCashout, @NonNull MaterialButton btnElec,
+      @NonNull MaterialButton btnCashout, @NonNull MaterialButton btnDiscount,
+      @NonNull MaterialButton btnElec, @NonNull MaterialButton btnFull,
       @NonNull MaterialButton btnGames, @NonNull MaterialButton btnMore,
       @NonNull CardView cardBuyNow, @NonNull ChipGroup chipGroup, @NonNull Chip chipRequest,
       @NonNull Chip chipScan, @NonNull Chip chipSend, @NonNull Chip chipTopUp,
@@ -80,7 +87,9 @@ public final class ActivityMainBinding implements ViewBinding {
     this.rootView = rootView;
     this.btnBuyNow = btnBuyNow;
     this.btnCashout = btnCashout;
+    this.btnDiscount = btnDiscount;
     this.btnElec = btnElec;
+    this.btnFull = btnFull;
     this.btnGames = btnGames;
     this.btnMore = btnMore;
     this.cardBuyNow = cardBuyNow;
@@ -134,9 +143,21 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnDiscount;
+      MaterialButton btnDiscount = ViewBindings.findChildViewById(rootView, id);
+      if (btnDiscount == null) {
+        break missingId;
+      }
+
       id = R.id.btnElec;
       MaterialButton btnElec = ViewBindings.findChildViewById(rootView, id);
       if (btnElec == null) {
+        break missingId;
+      }
+
+      id = R.id.btnFull;
+      MaterialButton btnFull = ViewBindings.findChildViewById(rootView, id);
+      if (btnFull == null) {
         break missingId;
       }
 
@@ -212,9 +233,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ScrollView) rootView, btnBuyNow, btnCashout, btnElec,
-          btnGames, btnMore, cardBuyNow, chipGroup, chipRequest, chipScan, chipSend, chipTopUp,
-          horizontalScrollView, imagePulsa, textBonusPulsa, textViewPulsa);
+      return new ActivityMainBinding((ScrollView) rootView, btnBuyNow, btnCashout, btnDiscount,
+          btnElec, btnFull, btnGames, btnMore, cardBuyNow, chipGroup, chipRequest, chipScan,
+          chipSend, chipTopUp, horizontalScrollView, imagePulsa, textBonusPulsa, textViewPulsa);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

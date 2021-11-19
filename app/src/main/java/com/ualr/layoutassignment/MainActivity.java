@@ -17,6 +17,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mBinding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
+
+//        mBinding.btnFull.setSelected(true);
+    }
+
+
+
+    public void applyDiscount()
+    {
+
+        return;
+    }
+
+    public void removeDiscount()
+    {
+
+        return;
+    }
+
+    public void recalculate()
+    {
+
+        return;
     }
 
 }

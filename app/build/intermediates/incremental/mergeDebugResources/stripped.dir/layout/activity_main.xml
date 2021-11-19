@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200">
+
+    <!-- TODO 01. Define the layout for the MainActivity here. -->
+    <!-- NOTE: Remember that in order to include some GUI components you will have to use the Material library -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipScan"
+                    style="@style/Chip.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_chip"
+                    app:chipIcon="@drawable/ic_center_focus_weak_chip" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTopUp"
+                    style="@style/Chip.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/top_up_chip"
+                    app:chipIcon="@drawable/ic_add_circle_outline_chip" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipSend"
+                    style="@style/Chip.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_chip"
+                    app:chipIcon="@drawable/ic_open_in_new_chip" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipRequest"
+                    style="@style/Chip.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/request_chip"
+                    app:chipIcon="@drawable/ic_open_in_new_rotated_chip" />
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBuyNow"
+            style="@style/CardView.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="16dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/imagePulsa"
+                    android:layout_width="@dimen/spacing_xxlarge"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:srcCompat="@drawable/ic_phone_android" />
+
+                <TextView
+                    android:id="@+id/textViewPulsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/pulsa_amp_data"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toEndOf="@id/imagePulsa"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textBonusPulsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bonus_pulsa_50"
+                    android:textColor="@color/red_300"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="@id/textViewPulsa"
+                    app:layout_constraintTop_toBottomOf="@id/textViewPulsa" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBuyNow"
+                    style="@style/Button.Blue.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/buy_now"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnElec"
+                    style="@style/Button.White.Borderless"
+                    app:layout_constraintTop_toBottomOf="@id/imagePulsa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="Electric..."
+                    app:icon="@drawable/ic_lightbulb"
+                    app:iconTint="@color/yellow_900" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCashout"
+                    style="@style/Button.White.Borderless"
+                    android:layout_marginStart="16dp"
+                    android:text="Cashout"
+                    app:icon="@drawable/ic_monetization_on"
+                    app:iconTint="@color/green_400"
+                    app:layout_constraintStart_toEndOf="@+id/btnElec"
+                    app:layout_constraintTop_toBottomOf="@id/imagePulsa" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGames"
+                    style="@style/Button.White.Borderless"
+                    android:text="Games"
+                    app:icon="@drawable/ic_games"
+                    app:iconTint="@color/light_blue_500"
+                    app:layout_constraintEnd_toStartOf="@+id/btnMore"
+                    app:layout_constraintHorizontal_bias="0.407"
+                    app:layout_constraintStart_toEndOf="@id/btnCashout"
+                    app:layout_constraintTop_toBottomOf="@id/imagePulsa" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMore"
+                    style="@style/Button.White.Borderless"
+                    android:text="See All"
+                    app:icon="@drawable/ic_more_horiz"
+                    app:iconTint="@color/red_300"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imagePulsa" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            app:singleSelection="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardBuyNow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFull"
+                style="@style/Button.Blue.Group"
+                android:text="No Discount"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDiscount"
+                style="@style/Button.Blue.Group"
+                android:text="Discount"
+                />
+
+
+
+
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

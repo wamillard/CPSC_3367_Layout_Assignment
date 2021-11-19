@@ -170,5 +170,31 @@
 
 
         </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            app:singleSelection="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardBuyNow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFull"
+                style="@style/Button.Blue.Group"
+                android:onClick="removeDiscount"
+                android:text="No Discount" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDiscount"
+                style="@style/Button.Blue.Group"
+                android:onClick="applyDiscount"
+                android:text="Discount" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

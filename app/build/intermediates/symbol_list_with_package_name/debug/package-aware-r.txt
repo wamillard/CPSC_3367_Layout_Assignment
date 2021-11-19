@@ -2256,7 +2256,9 @@ id bounceEnd
 id bounceStart
 id btnBuyNow
 id btnCashout
+id btnDiscount
 id btnElec
+id btnFull
 id btnGames
 id btnMore
 id buttonPanel
