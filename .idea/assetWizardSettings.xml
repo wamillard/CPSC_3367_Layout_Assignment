@@ -11,10 +11,24 @@
                   <entry key="vectorAssetStep">
                     <value>
                       <PersistentState>
+                        <option name="children">
+                          <map>
+                            <entry key="clipartAsset">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="url" value="file:/D:/Users/Asa-T/AppData/Local/Android/Sdk/icons/material/materialicons/remove_circle/baseline_remove_circle_24.xml" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_back_and_forth" />
+                            <entry key="outputName" value="ic_baseline_remove_circle_24" />
                             <entry key="sourceFile" value="G:\My Drive\School\2021 Fall\CPSC 4367 Mobile Apps Development\Assignments\Assignment 4- Due 11.1.21\back_and_forth2.svg" />
                           </map>
                         </option>

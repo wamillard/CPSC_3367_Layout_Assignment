@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\drawable\\ic_add_circle_outline_chip.xml"
     },
     {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_back_and_forth.xml.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_back_and_forth.xml"
+    },
+    {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -20,12 +24,20 @@
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_back_and_forth.png.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_back_and_forth.png"
+    },
+    {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_back_and_forth.png.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_back_and_forth.png"
     },
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_phone_android.xml.flat",
@@ -38,6 +50,10 @@
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_mail_outline.xml.flat",
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\drawable\\ic_mail_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_circle_24.xml.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_24.xml"
     },
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo_small_round.png.flat",
@@ -56,8 +72,16 @@
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\drawable\\ic_lightbulb.xml"
     },
     {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_back_and_forth.png.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_back_and_forth.png"
+    },
+    {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_back_and_forth.png.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_back_and_forth.png"
     },
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_open_in_new_chip.xml.flat",
@@ -70,6 +94,10 @@
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_monetization_on.xml.flat",
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\drawable\\ic_monetization_on.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_back_and_forth.png.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_back_and_forth.png"
     },
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_more_horiz.xml.flat",
@@ -118,5 +146,13 @@
     {
         "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_remove_circle_24.xml.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\src\\main\\res\\drawable\\ic_baseline_remove_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_back_and_forth.png.flat",
+        "source": "C:\\Users\\Asa-T\\Documents\\Android Studio\\Code Examples\\CPSC_3367_Layout_Assignment\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_back_and_forth.png"
     }
 ]
