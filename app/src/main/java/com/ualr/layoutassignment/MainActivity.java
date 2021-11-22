@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintSet;
 
 import com.google.android.material.button.MaterialButton;
 import com.ualr.layoutassignment.databinding.ActivityMainBinding;
@@ -26,15 +27,6 @@ public class MainActivity extends AppCompatActivity {
         mBinding=ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
 
-/*        this.mBinding.btnAdd0.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                quantityChange(true, v.getTag().toString());
-            }
-
-        });*/
 
         this.mBinding.layoutDiscount.setStartIconOnClickListener(new View.OnClickListener()
         {
@@ -74,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 Double newDiscount= Double.parseDouble(mBinding.editDiscount.getText().toString().substring(0,mBinding.editDiscount.getText().length()-1));
-                calculateTotal(newDiscount);            }
+                calculateTotal(newDiscount);
+            }
         });
 
         this.mBinding.btnCalculate.setOnClickListener(new View.OnClickListener()
@@ -284,6 +277,8 @@ public class MainActivity extends AppCompatActivity {
         EditText qty=findViewById(getResources().getIdentifier("editQty"+currProduct,"id",getPackageName()));
         Integer newQty=Integer.parseInt(qty.getText().toString());
         CheckBox check=findViewById(getResources().getIdentifier("check"+currProduct,"id",getPackageName()));
+        TextView subtotal=findViewById(getResources().getIdentifier("txtSubtotal"+currProduct,"id",getPackageName()));
+        TextView cost=findViewById(getResources().getIdentifier("txtCost"+currProduct,"id",getPackageName()));
 
         if (op=='a')  //a is add | s is subtract
         {
@@ -304,12 +299,14 @@ public class MainActivity extends AppCompatActivity {
             check.setChecked(true);
         }
         qty.setText(newQty.toString());
+        Double newSub=Double.parseDouble(cost.getText().toString())*newQty;
+        subtotal.setText(String.format("%.2f",newSub));
 
     }
 
-
     public void calculateTotal( Double percentDiscount)
     {
+
         Boolean apply=this.mBinding.btnDiscount.isChecked();
 
         Double costModifier=1-(percentDiscount/100);
@@ -339,6 +336,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         this.mBinding.txtTotal.setText(String.format("%.2f",newTotal));
+
+
 
 
         return;
