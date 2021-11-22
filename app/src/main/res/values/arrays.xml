@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="product_names">
+        <item>Product 1</item>
+        <item>Product 2</item>
+        <item>Product 3</item>
+        <item>Product 4</item>
+        <item>Product 5</item>
+        <item>Product 6</item>
+        <item>Product 7</item>
+        <item>Product 8</item>
+
+    </string-array>
+
+    <string-array name="product_price">
+        <item>100.00</item>
+        <item>0.99</item>
+        <item>15.99</item>
+        <item>99.99</item>
+        <item>1.99</item>
+        <item>2.50</item>
+        <item>4.98</item>
+        <item>9.99</item>
+
+    </string-array>
+</resources>

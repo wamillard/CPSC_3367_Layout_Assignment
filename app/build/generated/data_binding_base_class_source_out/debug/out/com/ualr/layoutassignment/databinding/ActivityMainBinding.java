@@ -8,18 +8,20 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.ualr.layoutassignment.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -30,7 +32,28 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ScrollView rootView;
 
   @NonNull
-  public final MaterialButton btnAdd;
+  public final MaterialButton btnAdd0;
+
+  @NonNull
+  public final MaterialButton btnAdd1;
+
+  @NonNull
+  public final MaterialButton btnAdd2;
+
+  @NonNull
+  public final MaterialButton btnAdd3;
+
+  @NonNull
+  public final MaterialButton btnAdd4;
+
+  @NonNull
+  public final MaterialButton btnAdd5;
+
+  @NonNull
+  public final MaterialButton btnAdd6;
+
+  @NonNull
+  public final MaterialButton btnAdd7;
 
   @NonNull
   public final MaterialButton btnBuyNow;
@@ -63,7 +86,28 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView btnRefresh;
 
   @NonNull
-  public final MaterialButton btnSubtract;
+  public final MaterialButton btnSubtract0;
+
+  @NonNull
+  public final MaterialButton btnSubtract1;
+
+  @NonNull
+  public final MaterialButton btnSubtract2;
+
+  @NonNull
+  public final MaterialButton btnSubtract3;
+
+  @NonNull
+  public final MaterialButton btnSubtract4;
+
+  @NonNull
+  public final MaterialButton btnSubtract5;
+
+  @NonNull
+  public final MaterialButton btnSubtract6;
+
+  @NonNull
+  public final MaterialButton btnSubtract7;
 
   @NonNull
   public final CardView cardBuyNow;
@@ -72,10 +116,28 @@ public final class ActivityMainBinding implements ViewBinding {
   public final CardView cardInvoice;
 
   @NonNull
+  public final CheckBox check0;
+
+  @NonNull
   public final CheckBox check1;
 
   @NonNull
   public final CheckBox check2;
+
+  @NonNull
+  public final CheckBox check3;
+
+  @NonNull
+  public final CheckBox check4;
+
+  @NonNull
+  public final CheckBox check5;
+
+  @NonNull
+  public final CheckBox check6;
+
+  @NonNull
+  public final CheckBox check7;
 
   @NonNull
   public final ChipGroup chipGroup;
@@ -96,7 +158,31 @@ public final class ActivityMainBinding implements ViewBinding {
   public final View divider;
 
   @NonNull
+  public final TextInputEditText editDiscount;
+
+  @NonNull
+  public final EditText editQty0;
+
+  @NonNull
   public final EditText editQty1;
+
+  @NonNull
+  public final EditText editQty2;
+
+  @NonNull
+  public final EditText editQty3;
+
+  @NonNull
+  public final EditText editQty4;
+
+  @NonNull
+  public final EditText editQty5;
+
+  @NonNull
+  public final EditText editQty6;
+
+  @NonNull
+  public final EditText editQty7;
 
   @NonNull
   public final HorizontalScrollView horizontalScrollView;
@@ -105,7 +191,10 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView imagePulsa;
 
   @NonNull
-  public final ConstraintLayout linearLayout;
+  public final TextInputLayout layoutDiscount;
+
+  @NonNull
+  public final LinearLayout layoutProductList;
 
   @NonNull
   public final TextView textBonusPulsa;
@@ -114,7 +203,28 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView textViewPulsa;
 
   @NonNull
+  public final TextView txtCost0;
+
+  @NonNull
   public final TextView txtCost1;
+
+  @NonNull
+  public final TextView txtCost2;
+
+  @NonNull
+  public final TextView txtCost3;
+
+  @NonNull
+  public final TextView txtCost4;
+
+  @NonNull
+  public final TextView txtCost5;
+
+  @NonNull
+  public final TextView txtCost6;
+
+  @NonNull
+  public final TextView txtCost7;
 
   @NonNull
   public final TextView txtCurrency;
@@ -123,7 +233,28 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView txtInvoice;
 
   @NonNull
+  public final TextView txtSubtotal0;
+
+  @NonNull
   public final TextView txtSubtotal1;
+
+  @NonNull
+  public final TextView txtSubtotal2;
+
+  @NonNull
+  public final TextView txtSubtotal3;
+
+  @NonNull
+  public final TextView txtSubtotal4;
+
+  @NonNull
+  public final TextView txtSubtotal5;
+
+  @NonNull
+  public final TextView txtSubtotal6;
+
+  @NonNull
+  public final TextView txtSubtotal7;
 
   @NonNull
   public final TextView txtTotal;
@@ -131,23 +262,48 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView txtTotalLabel;
 
-  private ActivityMainBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnAdd,
-      @NonNull MaterialButton btnBuyNow, @NonNull MaterialButton btnCalculate,
-      @NonNull MaterialButton btnCashout, @NonNull MaterialButton btnDiscount,
-      @NonNull MaterialButton btnElec, @NonNull MaterialButton btnFull,
-      @NonNull MaterialButton btnGames, @NonNull MaterialButtonToggleGroup btnGroup,
-      @NonNull MaterialButton btnMore, @NonNull ImageView btnRefresh,
-      @NonNull MaterialButton btnSubtract, @NonNull CardView cardBuyNow,
-      @NonNull CardView cardInvoice, @NonNull CheckBox check1, @NonNull CheckBox check2,
+  private ActivityMainBinding(@NonNull ScrollView rootView, @NonNull MaterialButton btnAdd0,
+      @NonNull MaterialButton btnAdd1, @NonNull MaterialButton btnAdd2,
+      @NonNull MaterialButton btnAdd3, @NonNull MaterialButton btnAdd4,
+      @NonNull MaterialButton btnAdd5, @NonNull MaterialButton btnAdd6,
+      @NonNull MaterialButton btnAdd7, @NonNull MaterialButton btnBuyNow,
+      @NonNull MaterialButton btnCalculate, @NonNull MaterialButton btnCashout,
+      @NonNull MaterialButton btnDiscount, @NonNull MaterialButton btnElec,
+      @NonNull MaterialButton btnFull, @NonNull MaterialButton btnGames,
+      @NonNull MaterialButtonToggleGroup btnGroup, @NonNull MaterialButton btnMore,
+      @NonNull ImageView btnRefresh, @NonNull MaterialButton btnSubtract0,
+      @NonNull MaterialButton btnSubtract1, @NonNull MaterialButton btnSubtract2,
+      @NonNull MaterialButton btnSubtract3, @NonNull MaterialButton btnSubtract4,
+      @NonNull MaterialButton btnSubtract5, @NonNull MaterialButton btnSubtract6,
+      @NonNull MaterialButton btnSubtract7, @NonNull CardView cardBuyNow,
+      @NonNull CardView cardInvoice, @NonNull CheckBox check0, @NonNull CheckBox check1,
+      @NonNull CheckBox check2, @NonNull CheckBox check3, @NonNull CheckBox check4,
+      @NonNull CheckBox check5, @NonNull CheckBox check6, @NonNull CheckBox check7,
       @NonNull ChipGroup chipGroup, @NonNull Chip chipRequest, @NonNull Chip chipScan,
       @NonNull Chip chipSend, @NonNull Chip chipTopUp, @NonNull View divider,
-      @NonNull EditText editQty1, @NonNull HorizontalScrollView horizontalScrollView,
-      @NonNull ImageView imagePulsa, @NonNull ConstraintLayout linearLayout,
-      @NonNull TextView textBonusPulsa, @NonNull TextView textViewPulsa, @NonNull TextView txtCost1,
-      @NonNull TextView txtCurrency, @NonNull TextView txtInvoice, @NonNull TextView txtSubtotal1,
-      @NonNull TextView txtTotal, @NonNull TextView txtTotalLabel) {
+      @NonNull TextInputEditText editDiscount, @NonNull EditText editQty0,
+      @NonNull EditText editQty1, @NonNull EditText editQty2, @NonNull EditText editQty3,
+      @NonNull EditText editQty4, @NonNull EditText editQty5, @NonNull EditText editQty6,
+      @NonNull EditText editQty7, @NonNull HorizontalScrollView horizontalScrollView,
+      @NonNull ImageView imagePulsa, @NonNull TextInputLayout layoutDiscount,
+      @NonNull LinearLayout layoutProductList, @NonNull TextView textBonusPulsa,
+      @NonNull TextView textViewPulsa, @NonNull TextView txtCost0, @NonNull TextView txtCost1,
+      @NonNull TextView txtCost2, @NonNull TextView txtCost3, @NonNull TextView txtCost4,
+      @NonNull TextView txtCost5, @NonNull TextView txtCost6, @NonNull TextView txtCost7,
+      @NonNull TextView txtCurrency, @NonNull TextView txtInvoice, @NonNull TextView txtSubtotal0,
+      @NonNull TextView txtSubtotal1, @NonNull TextView txtSubtotal2,
+      @NonNull TextView txtSubtotal3, @NonNull TextView txtSubtotal4,
+      @NonNull TextView txtSubtotal5, @NonNull TextView txtSubtotal6,
+      @NonNull TextView txtSubtotal7, @NonNull TextView txtTotal, @NonNull TextView txtTotalLabel) {
     this.rootView = rootView;
-    this.btnAdd = btnAdd;
+    this.btnAdd0 = btnAdd0;
+    this.btnAdd1 = btnAdd1;
+    this.btnAdd2 = btnAdd2;
+    this.btnAdd3 = btnAdd3;
+    this.btnAdd4 = btnAdd4;
+    this.btnAdd5 = btnAdd5;
+    this.btnAdd6 = btnAdd6;
+    this.btnAdd7 = btnAdd7;
     this.btnBuyNow = btnBuyNow;
     this.btnCalculate = btnCalculate;
     this.btnCashout = btnCashout;
@@ -158,27 +314,63 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnGroup = btnGroup;
     this.btnMore = btnMore;
     this.btnRefresh = btnRefresh;
-    this.btnSubtract = btnSubtract;
+    this.btnSubtract0 = btnSubtract0;
+    this.btnSubtract1 = btnSubtract1;
+    this.btnSubtract2 = btnSubtract2;
+    this.btnSubtract3 = btnSubtract3;
+    this.btnSubtract4 = btnSubtract4;
+    this.btnSubtract5 = btnSubtract5;
+    this.btnSubtract6 = btnSubtract6;
+    this.btnSubtract7 = btnSubtract7;
     this.cardBuyNow = cardBuyNow;
     this.cardInvoice = cardInvoice;
+    this.check0 = check0;
     this.check1 = check1;
     this.check2 = check2;
+    this.check3 = check3;
+    this.check4 = check4;
+    this.check5 = check5;
+    this.check6 = check6;
+    this.check7 = check7;
     this.chipGroup = chipGroup;
     this.chipRequest = chipRequest;
     this.chipScan = chipScan;
     this.chipSend = chipSend;
     this.chipTopUp = chipTopUp;
     this.divider = divider;
+    this.editDiscount = editDiscount;
+    this.editQty0 = editQty0;
     this.editQty1 = editQty1;
+    this.editQty2 = editQty2;
+    this.editQty3 = editQty3;
+    this.editQty4 = editQty4;
+    this.editQty5 = editQty5;
+    this.editQty6 = editQty6;
+    this.editQty7 = editQty7;
     this.horizontalScrollView = horizontalScrollView;
     this.imagePulsa = imagePulsa;
-    this.linearLayout = linearLayout;
+    this.layoutDiscount = layoutDiscount;
+    this.layoutProductList = layoutProductList;
     this.textBonusPulsa = textBonusPulsa;
     this.textViewPulsa = textViewPulsa;
+    this.txtCost0 = txtCost0;
     this.txtCost1 = txtCost1;
+    this.txtCost2 = txtCost2;
+    this.txtCost3 = txtCost3;
+    this.txtCost4 = txtCost4;
+    this.txtCost5 = txtCost5;
+    this.txtCost6 = txtCost6;
+    this.txtCost7 = txtCost7;
     this.txtCurrency = txtCurrency;
     this.txtInvoice = txtInvoice;
+    this.txtSubtotal0 = txtSubtotal0;
     this.txtSubtotal1 = txtSubtotal1;
+    this.txtSubtotal2 = txtSubtotal2;
+    this.txtSubtotal3 = txtSubtotal3;
+    this.txtSubtotal4 = txtSubtotal4;
+    this.txtSubtotal5 = txtSubtotal5;
+    this.txtSubtotal6 = txtSubtotal6;
+    this.txtSubtotal7 = txtSubtotal7;
     this.txtTotal = txtTotal;
     this.txtTotalLabel = txtTotalLabel;
   }
@@ -210,9 +402,51 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btnAdd;
-      MaterialButton btnAdd = ViewBindings.findChildViewById(rootView, id);
-      if (btnAdd == null) {
+      id = R.id.btnAdd0;
+      MaterialButton btnAdd0 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd0 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd1;
+      MaterialButton btnAdd1 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd1 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd2;
+      MaterialButton btnAdd2 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd2 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd3;
+      MaterialButton btnAdd3 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd3 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd4;
+      MaterialButton btnAdd4 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd4 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd5;
+      MaterialButton btnAdd5 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd5 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd6;
+      MaterialButton btnAdd6 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd6 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd7;
+      MaterialButton btnAdd7 = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd7 == null) {
         break missingId;
       }
 
@@ -276,9 +510,51 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnSubtract;
-      MaterialButton btnSubtract = ViewBindings.findChildViewById(rootView, id);
-      if (btnSubtract == null) {
+      id = R.id.btnSubtract0;
+      MaterialButton btnSubtract0 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract0 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubtract1;
+      MaterialButton btnSubtract1 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract1 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubtract2;
+      MaterialButton btnSubtract2 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract2 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubtract3;
+      MaterialButton btnSubtract3 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract3 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubtract4;
+      MaterialButton btnSubtract4 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract4 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubtract5;
+      MaterialButton btnSubtract5 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract5 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubtract6;
+      MaterialButton btnSubtract6 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract6 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSubtract7;
+      MaterialButton btnSubtract7 = ViewBindings.findChildViewById(rootView, id);
+      if (btnSubtract7 == null) {
         break missingId;
       }
 
@@ -294,6 +570,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.check0;
+      CheckBox check0 = ViewBindings.findChildViewById(rootView, id);
+      if (check0 == null) {
+        break missingId;
+      }
+
       id = R.id.check1;
       CheckBox check1 = ViewBindings.findChildViewById(rootView, id);
       if (check1 == null) {
@@ -303,6 +585,36 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.check2;
       CheckBox check2 = ViewBindings.findChildViewById(rootView, id);
       if (check2 == null) {
+        break missingId;
+      }
+
+      id = R.id.check3;
+      CheckBox check3 = ViewBindings.findChildViewById(rootView, id);
+      if (check3 == null) {
+        break missingId;
+      }
+
+      id = R.id.check4;
+      CheckBox check4 = ViewBindings.findChildViewById(rootView, id);
+      if (check4 == null) {
+        break missingId;
+      }
+
+      id = R.id.check5;
+      CheckBox check5 = ViewBindings.findChildViewById(rootView, id);
+      if (check5 == null) {
+        break missingId;
+      }
+
+      id = R.id.check6;
+      CheckBox check6 = ViewBindings.findChildViewById(rootView, id);
+      if (check6 == null) {
+        break missingId;
+      }
+
+      id = R.id.check7;
+      CheckBox check7 = ViewBindings.findChildViewById(rootView, id);
+      if (check7 == null) {
         break missingId;
       }
 
@@ -342,9 +654,57 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.editDiscount;
+      TextInputEditText editDiscount = ViewBindings.findChildViewById(rootView, id);
+      if (editDiscount == null) {
+        break missingId;
+      }
+
+      id = R.id.editQty0;
+      EditText editQty0 = ViewBindings.findChildViewById(rootView, id);
+      if (editQty0 == null) {
+        break missingId;
+      }
+
       id = R.id.editQty1;
       EditText editQty1 = ViewBindings.findChildViewById(rootView, id);
       if (editQty1 == null) {
+        break missingId;
+      }
+
+      id = R.id.editQty2;
+      EditText editQty2 = ViewBindings.findChildViewById(rootView, id);
+      if (editQty2 == null) {
+        break missingId;
+      }
+
+      id = R.id.editQty3;
+      EditText editQty3 = ViewBindings.findChildViewById(rootView, id);
+      if (editQty3 == null) {
+        break missingId;
+      }
+
+      id = R.id.editQty4;
+      EditText editQty4 = ViewBindings.findChildViewById(rootView, id);
+      if (editQty4 == null) {
+        break missingId;
+      }
+
+      id = R.id.editQty5;
+      EditText editQty5 = ViewBindings.findChildViewById(rootView, id);
+      if (editQty5 == null) {
+        break missingId;
+      }
+
+      id = R.id.editQty6;
+      EditText editQty6 = ViewBindings.findChildViewById(rootView, id);
+      if (editQty6 == null) {
+        break missingId;
+      }
+
+      id = R.id.editQty7;
+      EditText editQty7 = ViewBindings.findChildViewById(rootView, id);
+      if (editQty7 == null) {
         break missingId;
       }
 
@@ -360,9 +720,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout;
-      ConstraintLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout == null) {
+      id = R.id.layoutDiscount;
+      TextInputLayout layoutDiscount = ViewBindings.findChildViewById(rootView, id);
+      if (layoutDiscount == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutProductList;
+      LinearLayout layoutProductList = ViewBindings.findChildViewById(rootView, id);
+      if (layoutProductList == null) {
         break missingId;
       }
 
@@ -378,9 +744,51 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtCost0;
+      TextView txtCost0 = ViewBindings.findChildViewById(rootView, id);
+      if (txtCost0 == null) {
+        break missingId;
+      }
+
       id = R.id.txtCost1;
       TextView txtCost1 = ViewBindings.findChildViewById(rootView, id);
       if (txtCost1 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtCost2;
+      TextView txtCost2 = ViewBindings.findChildViewById(rootView, id);
+      if (txtCost2 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtCost3;
+      TextView txtCost3 = ViewBindings.findChildViewById(rootView, id);
+      if (txtCost3 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtCost4;
+      TextView txtCost4 = ViewBindings.findChildViewById(rootView, id);
+      if (txtCost4 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtCost5;
+      TextView txtCost5 = ViewBindings.findChildViewById(rootView, id);
+      if (txtCost5 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtCost6;
+      TextView txtCost6 = ViewBindings.findChildViewById(rootView, id);
+      if (txtCost6 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtCost7;
+      TextView txtCost7 = ViewBindings.findChildViewById(rootView, id);
+      if (txtCost7 == null) {
         break missingId;
       }
 
@@ -396,9 +804,51 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtSubtotal0;
+      TextView txtSubtotal0 = ViewBindings.findChildViewById(rootView, id);
+      if (txtSubtotal0 == null) {
+        break missingId;
+      }
+
       id = R.id.txtSubtotal1;
       TextView txtSubtotal1 = ViewBindings.findChildViewById(rootView, id);
       if (txtSubtotal1 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtSubtotal2;
+      TextView txtSubtotal2 = ViewBindings.findChildViewById(rootView, id);
+      if (txtSubtotal2 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtSubtotal3;
+      TextView txtSubtotal3 = ViewBindings.findChildViewById(rootView, id);
+      if (txtSubtotal3 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtSubtotal4;
+      TextView txtSubtotal4 = ViewBindings.findChildViewById(rootView, id);
+      if (txtSubtotal4 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtSubtotal5;
+      TextView txtSubtotal5 = ViewBindings.findChildViewById(rootView, id);
+      if (txtSubtotal5 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtSubtotal6;
+      TextView txtSubtotal6 = ViewBindings.findChildViewById(rootView, id);
+      if (txtSubtotal6 == null) {
+        break missingId;
+      }
+
+      id = R.id.txtSubtotal7;
+      TextView txtSubtotal7 = ViewBindings.findChildViewById(rootView, id);
+      if (txtSubtotal7 == null) {
         break missingId;
       }
 
@@ -414,12 +864,17 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ScrollView) rootView, btnAdd, btnBuyNow, btnCalculate,
-          btnCashout, btnDiscount, btnElec, btnFull, btnGames, btnGroup, btnMore, btnRefresh,
-          btnSubtract, cardBuyNow, cardInvoice, check1, check2, chipGroup, chipRequest, chipScan,
-          chipSend, chipTopUp, divider, editQty1, horizontalScrollView, imagePulsa, linearLayout,
-          textBonusPulsa, textViewPulsa, txtCost1, txtCurrency, txtInvoice, txtSubtotal1, txtTotal,
-          txtTotalLabel);
+      return new ActivityMainBinding((ScrollView) rootView, btnAdd0, btnAdd1, btnAdd2, btnAdd3,
+          btnAdd4, btnAdd5, btnAdd6, btnAdd7, btnBuyNow, btnCalculate, btnCashout, btnDiscount,
+          btnElec, btnFull, btnGames, btnGroup, btnMore, btnRefresh, btnSubtract0, btnSubtract1,
+          btnSubtract2, btnSubtract3, btnSubtract4, btnSubtract5, btnSubtract6, btnSubtract7,
+          cardBuyNow, cardInvoice, check0, check1, check2, check3, check4, check5, check6, check7,
+          chipGroup, chipRequest, chipScan, chipSend, chipTopUp, divider, editDiscount, editQty0,
+          editQty1, editQty2, editQty3, editQty4, editQty5, editQty6, editQty7,
+          horizontalScrollView, imagePulsa, layoutDiscount, layoutProductList, textBonusPulsa,
+          textViewPulsa, txtCost0, txtCost1, txtCost2, txtCost3, txtCost4, txtCost5, txtCost6,
+          txtCost7, txtCurrency, txtInvoice, txtSubtotal0, txtSubtotal1, txtSubtotal2, txtSubtotal3,
+          txtSubtotal4, txtSubtotal5, txtSubtotal6, txtSubtotal7, txtTotal, txtTotalLabel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

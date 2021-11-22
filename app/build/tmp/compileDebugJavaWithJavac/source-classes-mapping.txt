@@ -1,3 +1,5 @@
+com/ualr/layoutassignment/Product.java
+ com.ualr.layoutassignment.Product
 com/ualr/layoutassignment/BuildConfig.java
  com.ualr.layoutassignment.BuildConfig
 com/ualr/layoutassignment/databinding/ActivityMainBinding.java
@@ -5,3 +7,10 @@ com/ualr/layoutassignment/databinding/ActivityMainBinding.java
 com/ualr/layoutassignment/MainActivity.java
  com.ualr.layoutassignment.MainActivity
  com.ualr.layoutassignment.MainActivity$1
+ com.ualr.layoutassignment.MainActivity$2
+ com.ualr.layoutassignment.MainActivity$3
+ com.ualr.layoutassignment.MainActivity$4
+ com.ualr.layoutassignment.MainActivity$5
+ com.ualr.layoutassignment.MainActivity$6
+ com.ualr.layoutassignment.MainActivity$7
+ com.ualr.layoutassignment.MainActivity$8

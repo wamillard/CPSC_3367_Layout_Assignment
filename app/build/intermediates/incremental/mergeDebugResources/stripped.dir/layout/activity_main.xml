@@ -72,7 +72,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -171,9 +170,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardBuyNow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cardInvoice"
             app:singleSelection="true">
 
             <com.google.android.material.button.MaterialButton
@@ -190,6 +189,31 @@
 
         </com.google.android.material.button.MaterialButtonToggleGroup>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutDiscount"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Discount"
+            app:layout_constraintBottom_toTopOf="@id/cardInvoice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnGroup"
+            app:layout_constraintTop_toBottomOf="@id/cardBuyNow"
+            app:startIconDrawable="@drawable/ic_baseline_remove_24"
+            app:endIconDrawable="@drawable/ic_baseline_add_24"
+            app:endIconMode="custom"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="25%" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardInvoice"
             style="@style/CardView.White"
@@ -199,8 +223,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/txtInvoice"
@@ -234,86 +257,526 @@
                     app:layout_constraintTop_toBottomOf="@id/txtInvoice" />
 
                 <LinearLayout
+                    android:id="@+id/layoutProductList"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/divider">
 
+                    <!-- Product 1-->
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:id="@+id/linearLayout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check0"
+                            style="@style/CheckBox.Blue"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Product 01"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract0"
+                            style="@style/Button.Quantity.Subtract"
+                            android:tag="0"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/check0"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editQty0"
+                            style="@style/EditText.Quantity"
+                            android:tag="0"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract0"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAdd0"
+                            style="@style/Button.Quantity.Add"
+                            android:tag="0"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/editQty0"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost0"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost0"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCost0"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty0"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd0"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost0"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal0"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal0"
+                            style="@style/TextView.Product"
+                            android:inputType="numberDecimal"
+                            android:text="@string/_00_00"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty0"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Product 2-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+>
 
                         <CheckBox
                             android:id="@+id/check1"
                             style="@style/CheckBox.Blue"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            android:text="Product 01"
-                            android:textStyle="bold" />
+                            android:text="Product 01"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract1"
+                            style="@style/Button.Quantity.Subtract"
+                            android:tag="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/check1"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <EditText
+                            android:id="@+id/editQty1"
+                            style="@style/EditText.Quantity"
+                            android:tag="1"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAdd1"
+                            style="@style/Button.Quantity.Add"
+                            android:tag="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/editQty1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost1"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost1"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCost1"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty1"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost1"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal1"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal1"
+                            style="@style/TextView.Product"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty1"
+                            android:text="@string/_00_00" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Product 3-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
                         <CheckBox
                             android:id="@+id/check2"
                             style="@style/CheckBox.Blue"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            android:text="Product 01"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txtCost1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/check1"
-                            app:layout_constraintBottom_toBottomOf="@id/check1"
-                            android:gravity="center"
-                            android:text="12.96"
-                            android:textAlignment="center" />
+                            android:text="Product 01"/>
 
                         <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btnSubtract"
+                            android:id="@+id/btnSubtract2"
                             style="@style/Button.Quantity.Subtract"
-                            android:tag="1"
+                            android:tag="2"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@id/editQty1"
+                            app:layout_constraintStart_toEndOf="@id/check2"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <EditText
-                            android:id="@+id/editQty1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="5"
-                            android:inputType="number"
-                            android:tag="1"
-                            android:text="0"
-                            android:textAlignment="center"
-                            android:textIsSelectable="true"
-                            app:layout_constraintStart_toEndOf="@id/txtCost1"
+                            android:id="@+id/editQty2"
+                            style="@style/EditText.Quantity"
+                            android:tag="2"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract2"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btnAdd"
+                            android:id="@+id/btnAdd2"
                             style="@style/Button.Quantity.Add"
-                            android:tag="1"
+                            android:tag="2"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="@id/editQty1"
+                            app:layout_constraintStart_toEndOf="@id/editQty2"
                             app:layout_constraintTop_toTopOf="parent" />
 
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost2"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost2"
+                            />
 
                         <TextView
-                            android:id="@+id/txtSubtotal1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCost2"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty2"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost2"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal2"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal2"
+                            style="@style/TextView.Product"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintBottom_toBottomOf="@id/editQty1"
-                            android:gravity="center"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty2"
+                            android:text="@string/_00_00" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Product 4-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check3"
+                            style="@style/CheckBox.Blue"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Product 01"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract3"
+                            style="@style/Button.Quantity.Subtract"
+                            android:tag="3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/check3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editQty3"
+                            style="@style/EditText.Quantity"
+                            android:tag="3"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAdd3"
+                            style="@style/Button.Quantity.Add"
+                            android:tag="3"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/editQty3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost3"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost3"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCost3"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty3"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost3"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal3"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal3"
+                            style="@style/TextView.Product"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty3"
                             android:text="@string/_00_00" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
+                    <!-- Product 5-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check4"
+                            style="@style/CheckBox.Blue"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Product 01"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract4"
+                            style="@style/Button.Quantity.Subtract"
+                            android:tag="4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/check4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editQty4"
+                            style="@style/EditText.Quantity"
+                            android:tag="4"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAdd4"
+                            style="@style/Button.Quantity.Add"
+                            android:tag="4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/editQty4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost4"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost4"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCost4"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty4"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost4"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal4"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal4"
+                            style="@style/TextView.Product"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty4"
+                            android:text="@string/_00_00" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Product 6-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check5"
+                            style="@style/CheckBox.Blue"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Product 01"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract5"
+                            style="@style/Button.Quantity.Subtract"
+                            android:tag="5"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/check5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editQty5"
+                            style="@style/EditText.Quantity"
+                            android:tag="5"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAdd5"
+                            style="@style/Button.Quantity.Add"
+                            android:tag="5"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/editQty5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost5"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost5"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCost5"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty5"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost5"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal5"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal5"
+                            style="@style/TextView.Product"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty5"
+                            android:text="@string/_00_00" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Product 7-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/check6"
+                            style="@style/CheckBox.Blue"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Product 01"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract6"
+                            style="@style/Button.Quantity.Subtract"
+                            android:tag="6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/check6"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editQty6"
+                            style="@style/EditText.Quantity"
+                            android:tag="6"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract6"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAdd6"
+                            style="@style/Button.Quantity.Add"
+                            android:tag="6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/editQty6"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost6"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost6"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtCost6"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty6"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd6"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintTop_toTopOf="@id/txtCost6"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal6"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal6"
+                            style="@style/TextView.Product"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty6"
+                            android:text="@string/_00_00" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Product 8-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/check7"
+                            style="@style/CheckBox.Blue"
+                            android:text="Product 01"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract7"
+                            style="@style/Button.Quantity.Subtract"
+                            android:tag="7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/check7"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editQty7"
+                            style="@style/EditText.Quantity"
+                            app:layout_constraintStart_toEndOf="@id/btnSubtract7"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:tag="7" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAdd7"
+                            style="@style/Button.Quantity.Add"
+                            android:tag="7"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/editQty7"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintEnd_toStartOf="@id/txtCost7"
+                            app:layout_constraintTop_toTopOf="@id/txtCost7" />
+
+                        <TextView
+                            android:id="@+id/txtCost7"
+                            style="@style/TextView.Product"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty7"
+                            app:layout_constraintStart_toEndOf="@id/btnAdd7"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            style="@style/TextView.Product.Currency"
+                            app:layout_constraintEnd_toStartOf="@id/txtSubtotal7"
+                            app:layout_constraintTop_toTopOf="@id/txtCost7" />
+
+                        <TextView
+                            android:id="@+id/txtSubtotal7"
+                            style="@style/TextView.Product"
+                            android:text="@string/_00_00"
+                            app:layout_constraintBottom_toBottomOf="@id/editQty7"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </LinearLayout>
 
@@ -327,7 +790,6 @@
             android:text="Calculate Total"
             app:layout_constraintStart_toStartOf="@id/cardInvoice"
             app:layout_constraintTop_toBottomOf="@id/cardInvoice" />
-
 
         <TextView
             android:id="@+id/txtTotalLabel"

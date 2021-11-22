@@ -52,7 +52,6 @@
         <item name="android:layout_marginLeft">6dp</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:background">@android:color/white</item>
-
         <item name="cardBackgroundColor">@android:color/white</item>
         <item name="cardCornerRadius">@dimen/card_corner_radius</item>
         <item name="cardElevation">@dimen/card_elevation</item>
@@ -71,30 +70,50 @@
         <item name="fontFamily">sans-serif-medium</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextView.Product.Cost" parent="Widget.MaterialComponents.TextView">
+    <style name="TextView.Product" parent="Widget.MaterialComponents.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
 
+    <style name="TextView.Product.Currency" parent="TextView.Product">
+        <item name="android:text">@string/dollar_symbol</item>
+        <item name="android:layout_marginRight">1dp</item>
+
+    </style>
+    <style name="EditText.Quantity" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:text">0</item>
+        <item name="android:minEms">3</item>
 
 
     </style>
-
     <style name="Button.Quantity" parent="Widget.MaterialComponents.Button">
         <item name="android:layout_width">30dp</item>
         <item name="android:layout_height">30dp</item>
+        <item name="backgroundTint">@color/grey_300</item>
     </style>
 
     <style name="Button.Quantity.Subtract" parent="Button.Quantity">
-        <item name="android:background">@drawable/ic_baseline_remove_circle_24</item>
-        <item name="backgroundTint">@color/amber_900</item>
+        <item name="android:background">@drawable/ic_baseline_remove_24</item>
+        <item name="android:layout_marginLeft">20dp</item>
+
     </style>
 
     <style name="Button.Quantity.Add" parent="Button.Quantity">
-        <item name="android:background">@drawable/ic_baseline_add_circle_24</item>
+        <item name="android:background">@drawable/ic_baseline_add_24</item>
 
     </style>
 
@@ -109,6 +128,7 @@
         <item name="android:layout_height">wrap_content</item>
 
     </style>
+
 
 
 </resources>
