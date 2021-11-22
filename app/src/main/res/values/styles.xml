@@ -7,9 +7,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Button.Blue.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+    <style name="Button.Blue.Borderless" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textColor">@android:color/white</item>
         <item name="colorButtonNormal">@color/blue_400</item>
+    </style>
+
+    <style name="Button.White.Borderless" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/grey_500</item>
+        <item name="colorButtonNormal">@android:color/transparent</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12dp</item>
+        <item name="iconSize">@dimen/spacing_xlarge</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textTop</item>
+        <item name="textAllCaps">false</item>
+        <item name="strokeColor">@android:color/white</item>
     </style>
 
     <style name="Chip.Blue" parent="@style/Widget.MaterialComponents.Chip.Action">
@@ -24,13 +40,27 @@
     <style name="Button.Blue.Group" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:textColor">@color/btn_group_txt</item>
         <item name="backgroundTint">@color/btn_group_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
     </style>
 
     <style name="CardView.White" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@android:color/white</item>
         <item name="cardBackgroundColor">@android:color/white</item>
         <item name="cardCornerRadius">@dimen/card_corner_radius</item>
         <item name="cardElevation">@dimen/card_elevation</item>
         <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="CardView.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="CheckBox.Blue" parent="Widget.AppCompat.CompoundButton.CheckBox">
@@ -38,6 +68,53 @@
         <item name="android:textColor">@color/grey_80</item>
         <item name="buttonTint">@color/colorPrimary</item>
         <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Product" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="TextView.Product.Currency" parent="TextView.Product">
+        <item name="android:text">@string/dollar_symbol</item>
+        <item name="android:layout_marginRight">1dp</item>
+
+    </style>
+    <style name="EditText.Quantity" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:text">0</item>
+        <item name="android:minEms">3</item>
+
+
+    </style>
+    <style name="Button.Quantity" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="backgroundTint">@color/grey_300</item>
+    </style>
+
+    <style name="Button.Quantity.Subtract" parent="Button.Quantity">
+        <item name="android:background">@drawable/ic_baseline_remove_24</item>
+        <item name="android:layout_marginLeft">20dp</item>
+
+    </style>
+
+    <style name="Button.Quantity.Add" parent="Button.Quantity">
+        <item name="android:background">@drawable/ic_baseline_add_24</item>
+
     </style>
 
     <style name="EditText.Blue" parent="Widget.AppCompat.EditText">
@@ -47,6 +124,11 @@
 
     <style name="Button.Outlined.White" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="backgroundTint">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
     </style>
+
+
 
 </resources>
